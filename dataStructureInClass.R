@@ -188,7 +188,7 @@ ds %>% pivot_longer(-(id:dob), names_to = "age", values_to = "word")
 ds %>% pivot_longer(-(id:dob), names_to = "age", 
                     names_prefix = "age_", values_to = "word")
 ds %>% pivot_longer(-(id:dob), names_to = "age", 
-                    values_to = "word", values_drop_na = T, names_prefix = "age_")
+                    values_to = "word", values_drop_na = T, names_prefix = "age_") #skip the age_ part of age so its only the number and not age_number
 
 # One Column -> Multiple variables
 
